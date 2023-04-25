@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(90deg,lightgreen,lightyellow, lightyellow);
+}
+
+#logo > p{
+    margin: 0;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'hanoble';
+    
+}
+
+#slogan{
+    margin: 0;
+}
+
+#navBarra{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    margin-top: 64px;
+    margin-left: 40px;
+    background-color: lightgreen;
+    
+}
+#navBarra > li {
+    margin: 0;
+    list-style: none;
+}
+
+.navBotoes{
+    text-decoration: none;
+    margin: 0px;
+    padding: 40px;
+    font-size: 18px;
+    color: #000;
+}
+
+.navBotoes:hover{
+    text-decoration:overline;
+    font-size: 19px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.container{
+    height: 100%;
+    display: none;
+    margin-right: 30px;
+    margin-top: -40px;
+    
+}
+
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor:pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: green;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0px;
+}
+
+label span:nth-child(2){
+    top: 8px;
+}
+
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+@font-face {
+    font-family:"hanoble";
+    src: url("/font/Hanoble.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer{
+    justify-content: last baseline;
+}
+
+.header-boss{
+    display: flex;
+}
+
+@media all and (max-width: 800px){
+    #header{
+        flex-direction: column; 
+    }
+    #navBarra{
+        d
+    }
+}
+
+@media all and (max-width: 600px){
+    #navBarra{
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    #header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
