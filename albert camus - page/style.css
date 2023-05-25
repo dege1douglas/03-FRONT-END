@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+}
+
+hr{
+    background-color: black;
+}
+
+/* TRATAMENTO DO HEADER DA PAGE // NAVBARRA  */
+
+.nav-bar{
+    display: flex;
+    justify-content: left;
+    background:linear-gradient(90deg, #fff,lightcyan);
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    font-family: madeinfinity;   
+    box-shadow: 1px 1px 10px lightcyan;
+    position: absolute;
+    top: 0;
+    padding: 60px 0;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar>ul>li{
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 40px;
+}
+
+.nav-bar ul li:nth-child(1) a{
+    text-decoration: overline;
+}
+
+.nav-bar>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-bar>ul>li>a:hover{
+    text-decoration: overline;
+    transition: all .5s;
+    color: lightpink;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    background: linear-gradient(90deg, white, lightcyan);
+    flex-wrap: wrap;
+}
+
+.logomarca>p{
+    position: absolute;
+    top: -60px;
+    left: 36%;
+    font-family: rostley;
+    transition: all .2s;
+    font-size: 70px;
+
+    background-color: plum;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px black;
+}
+
+#frase{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    font-family: madeinfinity;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -50px;
+}
+
+.logomarca-frase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-banner{
+    width: 100%;
+    height:300px;
+    overflow-x: hidden;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.image-banner img{
+    width: 100%;
+    position: absolute;
+    padding-bottom: 200px;
+    top: -300px;
+}
+
+/* AREA PARA INSERÇÃO DE FONTES NOVAS */
+
+@font-face {
+    font-family: madeinfinity;
+    src: url(fonts/made_infinity/MADEINFINITY\ PERSONALUSE-Thin.otf);
+}
+
+@font-face {
+    font-family: whitedream;
+    src: url(fonts/white_dream/White\ Dream.otf);
+}
+
+@font-face {
+    font-family: delight;
+    src: url(fonts/delight/Delight\ Mother.ttf);
+}
+
+@font-face {
+    font-family: rostley;
+    src: url(fonts/rostley/Rostley_PERSONAL_USE_ONLY.otf);
+}
+
+/* INICIO TRATAMENTO CONTEUDO PAGE  */
+.content-total{
+    padding-top: 100px;
+}
+
+.content-content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.content-content1{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    text-align: justify;
+}
+
+.content-content > p{
+    padding-left: 90px;
+}
+
+#png-albert{
+    transform: rotate(-30deg);
+    border-radius: 100px;
+}
+
+
+#sisifo{
+    width: 40%;
+    height: 40%;
+}
+
+@keyframes rotacion{
+    from{
+        transform: rotate(-30deg);
+    }
+
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes rotacion-reverse{
+    from{
+        transform: rotate(10deg);
+    }
+
+    to{
+        transform: rotate(-30deg);
+    }
+}
+.content-start-about{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-family: madeinfinity;
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 50px;
+    color: black;
+}
+.content-medium-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content-medium-text>p{
+    font-family: rostley;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    font-size: 50px;
+}
+
+.content-imgs{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.content-imgs>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-imgs>div>img{
+    margin: 50px;
+}
+
+.content-imgs1>p{
+    font-family: rostley;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.img {
+    box-shadow: 0px 0px 10px lightblue;
+    border-radius: 30px;
+    border: 1px solid black;
+    transition: transform .5s;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+.img:hover{
+    box-shadow: 3px 3px 30px lightblue; ;
+}
+
+.content-obras{
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+}
+
+.content-obras>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-obras>div>a{
+    text-decoration: none;
+    font-family: madeinfinity;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+/* INICIO TRATAMENTO DO FOOTER */
+
+footer{
+    background-color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav-bar-footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items:end;
+    font-family: madeinfinity;
+}
+
+.nav-bar-footer>li {
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 10px;
+
+}
+
+.nav-bar-footer>li>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: all .3s;
+}
+
+.nav-bar-footer>li>a:hover {
+    text-decoration: overline;
+    color: blueviolet;
+}
+
+.logomarca-footer>p{
+    margin-left: 30px;
+    font-family: rostley;
+    font-size: 50px;
+    color: white;
+}
+
+/* inicio tratamento responsividade */
+@media all and (max-width=600px){
+    header{
+        flex-direction: column;
+    }
+    .content-total{
+        flex-direction: column-reverse;
+    }
+    .content-content{
+        flex-direction: column;
+    }
+    .content-content1{
+        flex-direction: column;
+    }
+}
